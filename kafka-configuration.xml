@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<kafka-configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:noNamespaceSchemaLocation="kafka-extension.xsd">
+    <kafka-clusters>
+        <kafka-cluster>
+            <id>broker</id>
+            <bootstrap-servers>broker1:29092,broker2:39092,broker3:49092</bootstrap-servers>
+        </kafka-cluster>
+    </kafka-clusters>
+
+<!--    <mqtt-to-kafka-mappings>-->
+<!--        <mqtt-to-kafka-mapping>-->
+<!--            <id>mapping-humidity</id>-->
+<!--            <cluster-id>broker</cluster-id>-->
+<!--            <mqtt-topic-filters>-->
+<!--                <mqtt-topic-filter>smartweather/humidity</mqtt-topic-filter>-->
+<!--            </mqtt-topic-filters>-->
+<!--            <kafka-topic>smart_weather_humidity</kafka-topic>-->
+<!--            <message-partition>$.partitionId</message-partition>-->
+<!--        </mqtt-to-kafka-mapping>-->
+
+<!--        <mqtt-to-kafka-mapping>-->
+<!--            <id>mapping-temperature</id>-->
+<!--            <cluster-id>broker</cluster-id>-->
+<!--            <mqtt-topic-filters>-->
+<!--                <mqtt-topic-filter>smartweather/temperature</mqtt-topic-filter>-->
+<!--            </mqtt-topic-filters>-->
+<!--            <kafka-topic>smart_weather_temperature</kafka-topic>-->
+<!--            <message-partition>$.partitionId</message-partition>-->
+<!--        </mqtt-to-kafka-mapping>-->
+
+<!--        <mqtt-to-kafka-mapping>-->
+<!--            <id>mapping-renewable_energy</id>-->
+<!--            <cluster-id>broker</cluster-id>-->
+<!--            <mqtt-topic-filters>-->
+<!--                <mqtt-topic-filter>smartweather/renewable_energy</mqtt-topic-filter>-->
+<!--            </mqtt-topic-filters>-->
+<!--            <kafka-topic>smart_weather_renewable_energy</kafka-topic>-->
+<!--            <message-partition>$.partitionId</message-partition>-->
+<!--        </mqtt-to-kafka-mapping>-->
+<!--    </mqtt-to-kafka-mappings>-->
+
+    <kafka-to-mqtt-mappings>
+        <kafka-to-mqtt-mapping>
+            <id>mapping-kafka-ac</id>
+            <cluster-id>broker</cluster-id>
+            <kafka-topics>
+                <kafka-topic>ac</kafka-topic>
+            </kafka-topics>
+        </kafka-to-mqtt-mapping>
+
+        <kafka-to-mqtt-mapping>
+            <id>mapping-kafka-alarm</id>
+            <cluster-id>broker</cluster-id>
+            <kafka-topics>
+                <kafka-topic>alarm</kafka-topic>
+            </kafka-topics>
+        </kafka-to-mqtt-mapping>
+
+        <kafka-to-mqtt-mapping>
+            <id>mapping-kafka-light</id>
+            <cluster-id>broker</cluster-id>
+            <kafka-topics>
+                <kafka-topic>light</kafka-topic>
+            </kafka-topics>
+        </kafka-to-mqtt-mapping>
+    </kafka-to-mqtt-mappings>
+</kafka-configuration>
