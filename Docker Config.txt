@@ -1,0 +1,21 @@
+# Initialize network
+docker network create smart_weather_network
+
+# Running all service
+docker-compose up -d --build
+
+# Create kafka topic
+
+# Open connector to Kafka
+docker cp ./kafka-configuration.xml hivemq:/opt/hivemq/extensions/hivemq-kafka-extension
+
+docker cp ./config.xml hivemq:/opt/hivemq/extensions/hivemq-kafka-extension/conf
+
+docker exec -ti hivemq bash
+
+# Inside hivemq container
+cd /opt/hivemq/extensions/hivemq-kafka-extension/
+
+cd /opt/hivemq/extensions/hivemq-kafka-extension/conf
+
+rm -rf DISABLED

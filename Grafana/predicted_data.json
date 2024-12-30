@@ -1,0 +1,58 @@
+[
+    {
+        "Timestamp": "2022-01-02 00:00:00",
+        "Temperature": 25.139433,
+        "Humidity": 43.43158,
+        "SquareFootage": 1565.694,
+        "RenewableEnergy": 2.774699,
+        "EnergyConsumption": 75.36437
+    },
+    {
+        "Timestamp": "2022-01-02 02:00:00",
+        "Temperature": 28.704277,
+        "Humidity": 58.907658,
+        "SquareFootage": 1755.715,
+        "RenewableEnergy": 6.764672,
+        "EnergyConsumption": 78.27089
+    },
+    {
+        "Timestamp": "2022-01-02 03:00:00",
+        "Temperature": 20.08047,
+        "Humidity": 50.371635,
+        "SquareFootage": 1452.3163,
+        "RenewableEnergy": 8.623446,
+        "EnergyConsumption": 56.51985
+    },
+    {
+        "Timestamp": "2022-01-03 04:00:00",
+        "Temperature": 23.097359,
+        "Humidity": 51.40142,
+        "SquareFootage": 1094.1304,
+        "RenewableEnergy": 3.071969,
+        "EnergyConsumption": 70.81173
+    },
+    {
+        "Timestamp": "2022-01-04 05:00:00",
+        "Temperature": 29.576036,
+        "Humidity": 36.824265,
+        "SquareFootage": 1871.7092,
+        "RenewableEnergy": 17.62669,
+        "EnergyConsumption": 84.321884
+    },
+    {
+        "Timestamp": "2022-01-05 06:00:00",
+        "Temperature": 25.131166,
+        "Humidity": 35.70962,
+        "SquareFootage": 1607.0012,
+        "RenewableEnergy": 24.264702,
+        "EnergyConsumption": 46.165794
+    },
+    {
+        "Timestamp": "2022-01-06 07:00:00",
+        "Temperature": 23.182844,
+        "Humidity": 31.67992,
+        "SquareFootage": 1633.9553,
+        "RenewableEnergy": 27.5171,
+        "EnergyConsumption": 74.131905
+    }
+]
